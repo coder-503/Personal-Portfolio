@@ -28,24 +28,29 @@ main {
   padding: 10px;
 }
 
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
 /*THIS IS MY SOCIAL MEDIA CARD SECTION*/
 .socials {
-background-color: rgb(255, 255, 255);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 5rem;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 100px;
   width: 100%;
- padding-top: 100px;
- padding-bottom: 100px;
+ padding-top: 50px;
+ padding-bottom: 50px;
 }
 
 
 
 .card {
-background-color: rgb(160, 143, 255);
+background-color: #a08fff;
 border: 2px solid rgb(88, 81, 112);
 border-radius: 12px;
 width: 200px;
@@ -139,10 +144,13 @@ height: 100px;
 /*ABOUT ME DIV*/
 .about-me {
   text-align: center;
+  
+
 }
 /*THIS IS THE TITLE FOR THE CONTACT ME FORM*/
 .contact-me {
   text-align: center;
+  padding-top: 100px;
 }
 /* CONTACT FORM */
 .contact-form {
