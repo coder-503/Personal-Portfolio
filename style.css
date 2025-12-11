@@ -1,6 +1,6 @@
 /*This is the top of the site*/
 header {
-  background-color: rgb(145, 146, 248);
+  background-color: #9192f8;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
@@ -10,8 +10,9 @@ header {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #9192f8;
   margin: 0px;
+  font-family: "Oswald", sans-serif;
 }
 
 .navbar {
@@ -27,11 +28,45 @@ main {
   padding: 10px;
 }
 
-/*THIS IS MY SOCIAL MEDIA SECTION*/
+/*THIS IS MY SOCIAL MEDIA CARD SECTION*/
 .socials {
-  background-color: #6c8fb7;
-  margin: auto;
+background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+
+
+.card {
+background-color: rgb(160, 143, 255);
+border: 2px solid rgb(88, 81, 112);
+border-radius: 12px;
+width: 200px;
+height: 200px;
+text-align: center;
+padding: 1rem;
+box-shadow: 0 0 15px black;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 30px;
+  cursor: pointer;
 }
 
 /*this is for my images that are inside their own container*/
@@ -51,17 +86,37 @@ h1 {
   .gallery {
     column-count: 3;
   }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 900px) {
   .gallery {
     column-count: 2;
   }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 600px) {
   .gallery {
     column-count: 1;
+  }
+
+  .socials {
+flex-direction: column;
+align-items: center;
+  }
+
+  .card {
+width: 100px;
+height: 100px;
   }
 }
 /* PHOTO GALLERY */
@@ -79,6 +134,15 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   border: 2px solid #0077ff;
+}
+
+/*ABOUT ME DIV*/
+.about-me {
+  text-align: center;
+}
+/*THIS IS THE TITLE FOR THE CONTACT ME FORM*/
+.contact-me {
+  text-align: center;
 }
 /* CONTACT FORM */
 .contact-form {
@@ -131,7 +195,7 @@ h1 {
 /* THIS MY FOOTER */
 footer {
   padding: 10px;
-  background: black;
-  color: red;
+  background: #9192f8;
+  color: rgb(0, 0, 0);
   text-align: center;
 }

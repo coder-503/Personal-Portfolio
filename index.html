@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <title>Yordins Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -32,40 +42,57 @@
           <img src="./compressed//DSC00231.jpg" alt="placeholder" />
           <img src="./compressed//DSC00998.jpg" alt="placeholder" />
           <img src="./compressed//DSC03431.jpg" alt="placeholder" />
+          <img
+            src="./compressed/ADVERTISING-PRINT-yellow-print-1.png"
+            alt="placeholder"
+          />
+          <img
+            src="./compressed/ADVERTISING-PRINT-red-1.png"
+            alt="placeholder"
+          />
+          <img src="./compressed/BLAST.png" alt="placeholder" />
+          <img
+            src="./compressed/DEMONIX-DEVIL-BARS-LOGO.png"
+            alt="placeholder"
+          />
+          <img src="./compressed/Individual-packaging.png" alt="placeholder" />
+          <img src="./compressed/IMG_2842-1.png" alt="placeholder" />
         </div>
       </section>
 
       <!-- SOCIAL MEDIAS SECTION-->
       <section class="socials">
-        <p>
-          Socials for more of my projects I usually upload them on my Instagram
-          but soon I will start posting more on my tiktok and branch out into
-          making youtube videos.
-        </p>
-        <p>
+        <!-- INSTAGRAM CARD/FAVICON-->
+        <div class="card instagram">
           <a href="https://www.instagram.com/y.oung_sensei/" target="_blank"
-            >Instagram</a
-          >
-        </p>
-        <p>
+            ><img src="./compressed/Instagram-Logo.png" alt="Instagram" />
+          </a>
+        </div>
+
+        <!-- TIKTOK CARD/FAVICON-->
+        <div class="card tiktok">
           <a
-            href="https://www.tiktok.com/@young_sensei_?_r=1&_t=ZT-91ZGo92f1ig"
+            href="https://www.tiktok.com/@young_sensei_?is_from_webapp=1&sender_device=pc"
             target="_blank"
-            >Tiktok</a
-          >
-        </p>
-        <p>
+            ><img src="./compressed/tiktok-logo.png" alt="Tiktok"
+          /></a>
+        </div>
+
+        <!-- YOUTUBE CARD/FAVICON-->
+        <div class="card youtube">
           <a
-            href="https://youtube.com/@youngs3nsei?si=WO2_9_lZODacfZug"
+            href="https://youtube.com/@youngs3nsei?si=yYoTWCvvmtCoPaYd"
             target="_blank"
-            >Youtube Channel</a
           >
-        </p>
+            <img src="./compressed/youtube-logo.png" alt="Youtube"
+          /></a>
+        </div>
       </section>
       <!--ABOUT ME SECTION-->
       <section>
-        <h2>About Me</h2>
+        <div class="about-me"><h2>About Me</h2></div>
 
+        <img src="./compressed/soccer.png" alt="placeholder" />
         <p>
           Hi, I am Yordin and this is my portfolio. Currently I have some work
           that I am really proud of making and I always go back to my works and
@@ -81,48 +108,48 @@
         <li>Working Out</li>
       </ul>
 
-      <h2>My Favorite Websites</h2>
-      <ol>
-        <li><a href="https://hianime.to/" target="_blank">hianime</a></li>
-        <li>
-          <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
-        </li>
-      </ol>
-
       <!--Might Not Need This Form Here-->
-      <h2>Contact Me</h2>
-      <form action="/submit" method="post" class="contact-form">
-        <!--Name Field-->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" />
+      <section>
+        <div class="contact-me"><h2>Contact Me</h2></div>
 
-        <!-- Email Field -->
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="you@example.com"
-        />
+        <form action="/submit" method="post" class="contact-form">
+          <!--Name Field-->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
 
-        <!-- Phone Number Field-->
-        <label for="phone#">Phone#:</label>
-        <input type="phone#" id="phone#" name="phone#" placeholder="Phone #" />
+          <!-- Email Field -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+          />
 
-        <!-- Message Field -->
-        <label for="message">Message</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          cols="30"
-          placeholder="Type your message here"
-        ></textarea
-        ><br /><br />
+          <!-- Phone Number Field-->
+          <label for="phone#">Phone#:</label>
+          <input
+            type="phone#"
+            id="phone#"
+            name="phone#"
+            placeholder="Phone #"
+          />
 
-        <!-- Submit Button-->
-        <input type="submit" value="Send" />
-      </form>
+          <!-- Message Field -->
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+            placeholder="Type your message here"
+          ></textarea
+          ><br /><br />
+
+          <!-- Submit Button-->
+          <input type="submit" value="Send" />
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy;2025 Yordin Rodriguez</p>
